@@ -44,6 +44,10 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun makeColored(view: View) {
+        val one: TextView = findViewById(R.id.box_three_text)
+        val two: TextView = findViewById(R.id.box_four_text)
+        val three: TextView = findViewById(R.id.box_five_text)
+
         when (view.id) {
 
             R.id.box_one_text -> view.setBackgroundColor(Color.DKGRAY)
@@ -52,9 +56,9 @@ class MainActivity : AppCompatActivity() {
             R.id.box_four_text -> view.setBackgroundColor(Color.MAGENTA)
             R.id.box_five_text -> view.setBackgroundColor(Color.BLUE)
 
-            R.id.red_button -> box_three_text.setBackgroundResource(R.color.my_red)
-            R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
-            R.id.green_button -> box_five_text.setBackgroundResource(R.color.my_green)
+            R.id.red_button -> one.setBackgroundResource(R.color.my_red)
+            R.id.yellow_button -> two.setBackgroundResource(R.color.my_yellow)
+            R.id.green_button -> three.setBackgroundResource(R.color.my_green)
 
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
