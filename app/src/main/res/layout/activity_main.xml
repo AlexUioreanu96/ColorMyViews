@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/box_two_text"
         style="@style/whiteBox"
         android:layout_width="130dp"
         android:layout_height="130dp"
